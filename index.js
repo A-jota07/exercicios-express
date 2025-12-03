@@ -2,7 +2,11 @@ const express = require('express')
 const app = express()
 
 app.use((req, res) => {
-    res.send('Estou bem!')
+    res.json({
+        name: 'ipad 64Gb',
+        price: 1959.90,
+        discount: 0.15
+    })
 })
 
 
